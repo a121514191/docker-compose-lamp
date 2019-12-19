@@ -8,15 +8,17 @@ https://hackmd.io/@titangene/docker-lamp
 
 Step1:開啟docker 或是 docker-toolbox
 
-img
+![](https://github.com/a121514191/docker-compose-lamp/blob/master/docker.PNG)
 
 Step2:找到當前目錄(我的是C:\Program Files\Docker Toolbox)
 
-img
+![](https://github.com/a121514191/docker-compose-lamp/blob/master/ip.PNG)
+
+![](https://github.com/a121514191/docker-compose-lamp/blob/master/toolbox.PNG)
 
 Step3:將參考網址的檔案下載到當前目錄(我的是C:\Program Files\Docker Toolbox)
 
-img
+![](https://github.com/a121514191/docker-compose-lamp/blob/master/download.PNG)
 
 Step4:進入該資料夾(進入要執行的資料夾，docker-compose要能執行，一定要在當前目錄下，且有yml檔，才能執行)
 
@@ -93,12 +95,10 @@ mkdir 任意目錄名
 ```
 建立後在本端發現新增的資料夾即可
 
-img
+![](https://github.com/a121514191/docker-compose-lamp/blob/master/volume.PNG)
 
-Step8:先測試將檔案丟入測試環境(目前只成功靜態網站)
+Step8:先測試將檔案丟入測試環境 查看(目前只成功靜態網站)
 
-```
+![](https://github.com/a121514191/docker-compose-lamp/blob/master/test001.PNG)
 
-```
-
-
+預計要完成如同vargrant 的一鍵建立本機測試網站
