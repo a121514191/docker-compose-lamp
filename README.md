@@ -1,32 +1,32 @@
-### docker-compose-lamp
+# docker-compose-lamp
 
 參考往參考網址
 
 https://hackmd.io/@titangene/docker-lamp
 
-安裝步驟
+## 安裝步驟
 
-Step1:開啟docker 或是 docker-toolbox
+### Step1:開啟docker 或是 docker-toolbox
 
 ![](https://github.com/a121514191/docker-compose-lamp/blob/master/docker.PNG)
 
-Step2:找到當前目錄(我的是C:\Program Files\Docker Toolbox)
+### Step2:找到當前目錄(我的是C:\Program Files\Docker Toolbox)
 
 ![](https://github.com/a121514191/docker-compose-lamp/blob/master/ip.PNG)
 
 ![](https://github.com/a121514191/docker-compose-lamp/blob/master/toolbox.PNG)
 
-Step3:將參考網址的檔案下載到當前目錄(我的是C:\Program Files\Docker Toolbox)
+### Step3:將參考網址的檔案下載到當前目錄(我的是C:\Program Files\Docker Toolbox)
 
 ![](https://github.com/a121514191/docker-compose-lamp/blob/master/download.PNG)
 
-Step4:進入該資料夾(進入要執行的資料夾，docker-compose要能執行，一定要在當前目錄下，且有yml檔，才能執行)
+### Step4:進入該資料夾(進入要執行的資料夾，docker-compose要能執行，一定要在當前目錄下，且有yml檔，才能執行)
 
 ```
 cd docker-lamp-test/2_docker-compose-build-image
 ```
 
-Step5:檢查 docker-compose.yml 檔案
+### Step5:檢查 docker-compose.yml 檔案
 
 說明:
 
@@ -77,13 +77,13 @@ services:
       PMA_PORT: 3306     
 ```
 
-Step6:執行docker-compose
+### Step6:執行docker-compose
 
 ```
 docker-compose up -d 或是 (docker-compose -f 自定義名稱.yml up -d)
 ```
 
-Step7:進入容器檢查volume是否有對應到本地端檔案
+### Step7:進入容器檢查volume是否有對應到本地端檔案
 
 ```
 docker exec -it (容器編碼) bash       
@@ -97,8 +97,12 @@ mkdir 任意目錄名
 
 ![](https://github.com/a121514191/docker-compose-lamp/blob/master/volume.PNG)
 
-Step8:先測試將檔案丟入測試環境 查看(目前只成功靜態網站)
+### Step8:先測試將檔案丟入測試環境 查看(目前只成功靜態網站)
 
 ![](https://github.com/a121514191/docker-compose-lamp/blob/master/test001.PNG)
+
+## 後續問題
+1.目前ip 192.168.99.100 是我docker-toolbox vm的 
+  如果要能多IP 是設在此docker-toolbox vm裡面嗎
 
 預計要完成如同vargrant 的一鍵建立本機測試網站
