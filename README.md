@@ -72,15 +72,13 @@ services:
       - mysql
     environment:
       PMA_HOST: mysql
-      PMA_PORT: 3306
-      
+      PMA_PORT: 3306     
 ```
 
 Step6:執行docker-compose
 
 ```
 docker-compose up -d 或是 (docker-compose -f 自定義名稱.yml up -d)
-
 ```
 
 Step7:進入容器檢查volume是否有對應到本地端檔案
@@ -92,7 +90,6 @@ docker exec -it (容器編碼) bash
 
 ```
 mkdir 任意目錄名
-
 ```
 建立後在本端發現新增的資料夾即可
 
